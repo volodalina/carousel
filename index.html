@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css">
+    <script src="js/project.js"></script>
+</head>
+
+<body>
+<div class="backing">
+    <div class="position-rel">
+        <div class="outer-list-view" data-role="outer-list-view">
+            <div class="inner-list-view">
+                <div class="list-view animation-left" data-role="list-view"></div>
+            </div>
+        </div>
+        <div data-role="flipped">
+            <div class="arrow" data-action="previous"><i class="icon-left-open centering"></i>
+                <div class="helper-centering"></div>
+            </div>
+            <div class="arrow right-0" data-action="next"><i class="icon-right-open centering"></i>
+                <div class="helper-centering"></div>
+            </div>
+        </div>
+    </div>
+    <div class="title"><span>Место для заголовка, описания слайдера.</span></div>
+    <div class="outer-list-preview" data-role="outer-list-preview">
+        <div class="inner-list-preview">
+            <div class="list-preview animation-left" data-role="list-preview"></div>
+        </div>
+    </div>
+</div>
+
+<template id="view">
+    <div class="outer outer-view" data-id="" data-role="view-slider">
+        <div class="inner inner-view"><span></span></div>
+    </div>
+</template>
+
+<template id="preview">
+    <div class="outer cursor" data-id="" data-role="preview-slider">
+        <div class="inner inner-preview">
+            <div class="table">
+                <div class="table-cell"><span></span></div>
+            </div>
+        </div>
+    </div>
+</template>
+</body>
